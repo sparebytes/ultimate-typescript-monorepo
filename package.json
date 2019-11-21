@@ -1,0 +1,25 @@
+{
+  "name": "ultimate-typescript-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "workspaces": {
+    "packages": [
+      "projects/*/*"
+    ]
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsc -b tsconfig.json",
+    "clean": "rimraf *.tsbuildinfo projects/*/*/dist projects/*/*/*.tsbuildinfo",
+    "dev": "tsc-watch -b tsconfig.json --noClear --onSuccess \"yarn run start\" --onFailure \"yarn run start\"",
+    "start": "node --experimental-modules start-dev.js",
+    "delete-modules": "rimraf node_modules projects/**/node_modules"
+  },
+  "devDependencies": {
+    "@types/node": ">=12.12.11",
+    "rimraf": "^3.0.0",
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.7.2"
+  }
+}

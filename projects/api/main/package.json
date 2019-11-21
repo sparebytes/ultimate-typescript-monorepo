@@ -1,0 +1,8 @@
+{
+  "name": "@api/main",
+  "private": true,
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts"
+}

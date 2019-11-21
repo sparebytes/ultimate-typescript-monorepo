@@ -1,0 +1,8 @@
+{
+  "references": [
+    { "path": "./projects/api" },
+    { "path": "./projects/shared" }
+  ],
+  "include": [],
+  "exclude": ["**/*.ts"]
+}

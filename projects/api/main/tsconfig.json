@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.app.base.json",
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": true,
+    "composite": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["./src/**/*.ts"],
+  "references": [
+    { "path": "../../shared" }
+  ]
+}
